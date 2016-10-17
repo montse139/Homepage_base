@@ -1,0 +1,32 @@
+<!DODCTYPE>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock title %}</title>
+    <meta name="description" content="My first coding test">
+    <meta name="keywords" content="Montse, HTML, coding, Fakebook, Smartninja">
+    <meta name="author" content="Montse Gomez">
+    <link type="text/css" rel="stylesheet" href="assets/stylesheet.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <h4> FAKEBOOK </h4>
+      <div id="navbar">
+        <div id="nav">
+
+          <ol>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/pictures">Pictures</a></li>
+            <li> Information </li>
+            <li> Friends </li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+
+ {% block page_content %}{% endblock page_content %}
+
+  </body>
+</html>
